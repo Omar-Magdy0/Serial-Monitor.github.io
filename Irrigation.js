@@ -97,16 +97,6 @@ async function write (x){
 }
 
 
-
-
-
-
-
-function setFarmSettings(crop1,crop2,interval){
-  write("1"+"\n\n\n\n"+crop1+"\n"+crop2+"\n"+interval+"\n\n")}
-
-
-setFarmSettings("cucumber","watermelon",200);
 writeScreen.addEventListener("keydown",(e)=>{if(e.key === "Enter"){inp = writeScreen.value;writer.write(inp+"\n");console.log(inp);writeScreen.value = '';}});
 
 
