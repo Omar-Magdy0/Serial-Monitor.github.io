@@ -46,7 +46,7 @@ window.onload = async function() {
 nav.setAttribute("style","background-color : rgba(0, 206, 132, 0.5);")
 msg.style.display = "none";
 
-
+ 
 
 showContainer.setAttribute("id","showContainer");
 document.body.appendChild(showContainer);
