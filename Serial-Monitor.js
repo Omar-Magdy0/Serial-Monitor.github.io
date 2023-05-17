@@ -6,14 +6,10 @@ window.onload = async function() {
   
   baud.addEventListener('blur',()=>{baudValue = baud.value;})
     document.getElementById('connect').addEventListener('click', async () => {
-      
-      const filters = [
-        { usbVendorId: 0x2341, usbProductId: 0x0043 },
-        { usbVendorId: 0x2341, usbProductId: 0x0001 },{ usbVendorId: 0x067b, usbProductId: 0x2303 }
-      ];
+     
   
 
-      const port = await navigator.serial.requestPort({ filters });
+      const port = await navigator.serial.requestPort();
       const { usbProductId, usbVendorId } = port.getInfo();
 
       const ports = await navigator.serial.getPorts();
