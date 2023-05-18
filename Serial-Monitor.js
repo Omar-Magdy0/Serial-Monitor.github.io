@@ -46,7 +46,7 @@ msg.style.display = "none";
 
 showContainer.setAttribute("id","showContainer");
 document.body.appendChild(showContainer);
-showScreen = document.createElement('pre');
+showScreen = document.createElement('div');
 showContainer.appendChild(showScreen);
 showScreen.setAttribute("id","showScreen");
 writeScreen = document.createElement('input');
